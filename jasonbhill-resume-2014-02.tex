@@ -1,0 +1,170 @@
+
+%% jasonbhill-resume-2014-02.tex
+%% jason@jasonbhill.com
+
+\documentclass[letterpaper,10pt]{article}
+\usepackage{amsmath,color}
+
+\definecolor{darkblue}{rgb}{0,0,0.35}
+\definecolor{lightgray}{rgb}{0.5,0.5,0.5}
+\definecolor{lightblue}{rgb}{0.4,0.4,0.7}
+
+\usepackage[T1]{fontenc}
+\usepackage[bitstream-charter]{mathdesign}
+
+%% set spacings
+%%\linespread{1.0} %% comment out this line if not using charter font
+\usepackage[hmargin=2cm,vmargin=1.5cm]{geometry}
+\newcommand{\vsp}{\vspace{2pc}}
+\setlength\parindent{0pt} %% Sets indent space to 0
+\renewcommand{\indent}{\hspace{3pc}}
+
+\newcommand{\mblue}{\color{darkblue}}
+
+\begin{document}
+
+\pagestyle{empty}
+
+{\large\mblue R\'esum\'e}\hfill{\Huge\mblue Jason B. Hill}
+\break{\footnotesize jason@jasonbhill.com | www.jasonbhill.com | github.com/hilljb | 802-233-6490}
+
+
+\section*{\mblue Technical Skills}
+
+\vspace{-2.15pc} {\hfill\mblue\rule{5.37in}{0.02cm}}
+
+\vspace{1pc} \textbf{Languages/Libraries/APIs:} C/C++, Python, Cython, Bash, R, OpenMP, MPI, Boost,
+udev/sysfs, SCSI Generic, pandas 
+
+\bigbreak\textbf{OS:} Enterprise: SLES, RHEL, CentOS\qquad Personal: OpenSUSE, Debian, Ubuntu\qquad
+Devel: VirtualBox, Kiwi, OBS, APT
+
+\bigbreak\textbf{High Performance Technical Computing (HPTC):}\quad Experience coding for up to
+405,504-core distributed CPU/GPGPU systems, 4,096-core shared-memory single-image Linux systems,
+fixed-topology supercomputers, multi-controller HA RAID/MAID/JBOD SCSI-target devices, Amazon EC2,
+and commodity workstations.
+
+
+\section*{\mblue Work Experience}
+
+\vspace{-2.15pc}
+{\hfill\mblue\rule{5.245in}{0.02cm}}
+
+\vspace{1pc}
+\textbf{SGI (Silicon Graphics International)}\quad June 2013--present\hfill Longmont, CO
+
+\bigbreak
+\textit{Modular Infinite Storage -- Data Path Team}
+
+\begin{itemize} \item Led development of SCSI Enclosure Services (SES) backend [C/Cython] and
+frontend [Python] environmental monitoring utilities for the Modular Infinite Storage scale-out
+storage and compute platform.
+
+\item Wrote Massive Array Idle Disk (MAID) drive power [C] and udev/sysfs hardware utility
+[C++/Cython] libraries for the Infinite Storage Gateway platform.
+
+\item In charge of data path related system event logging for notification and system management.
+Wrote syslog event service [C++/Boost] and led event definition and cataloging management.
+
+\item Various: researched random IO cache algorithms for SSD/NVDIMM cache, automated target iSCSI
+port and Infiniband setup in OpenSUSE/SLES, tested Linux-HA solutions (e.g., Datera/RTSos, SLES HA,
+Pacemaker/Corosync).  \end{itemize}
+
+\vspace{1pc}
+\textbf{University of Colorado Boulder}\quad 2006--2013\hfill Boulder, CO
+
+\bigbreak
+\textit{Graduate Student / Doctoral Candidate / Instructor of Mathematics}
+
+\begin{itemize}
+\item Computational/algorithms research talks: 2 talks at international conferences, 2 invited talks
+at research institutions, 1 talk at Rocky Mountain Section Meeting of Mathematical Association of
+America, 29 seminar presentations at CU-Boulder and nearby universities, 7 hour-long guest lectures
+in CSCI6454 (graduate advanced algorithms).
+
+\item Instructor of record for 14 undergraduate courses (multivariable calculus,
+integral calculus, differential calculus, precalculus, college algebra, mathematics for the
+environment, finite mathematics, spirit and uses of mathematics).
+
+\item Instructor of record for 2
+graduate courses (math teacher training, math teacher training seminar).
+
+\item Root administrator
+of sage.colorado.edu, a Sage Notebook server for the University of Colorado community.
+\end{itemize} 
+
+
+\section*{\mblue Education}
+
+\vspace{-2.15pc}
+{\hfill\mblue\rule{5.845in}{0.02cm}}
+
+\vspace{1pc}
+\textbf{Ph.D. Mathematics (ABD)} -- computational group \& graph theory\hfill University
+of Colorado Boulder
+
+Working under Keith Kearnes and Alexander Hulpke to develop and implement parallel partition
+backtrack algorithms for graph isomorphism generalizations on large degree permutation
+representations.
+
+\bigbreak \textbf{M.A. Mathematics (2010)} -- computational group theory, representation
+theory\hfill University of Colorado Boulder
+
+\bigbreak \textbf{M.S. Mathematics (2006)} -- computational number theory\hfill University of
+Vermont
+
+Developed and implemented an algorithm to locate an instance of the smallest absolute value
+discriminant totally real number field of prime degree satisfying a given property. Used this
+algorithm to discover the first known totally real quintic number field having minimal signature
+group rank.
+
+\bigbreak \textbf{B.S. Mathematics (2004)}\hfill University of Michigan-Flint
+
+
+\section*{\mblue Personal Projects}
+
+\vspace{-2.15pc}
+{\hfill\mblue\rule{5.21in}{0.02cm}}
+
+\vspace{1pc}
+\begin{itemize}
+\item TweetWatch (github.com/hilljb/tweetwatch) -- A python module allowing one to (1) connect to
+and (2) parse retrieved data from Twitter's streaming API. Development and testing in collaboration
+with Room 214. Licensed under the LGPL.
+
+\item Sage (www.sagemath.org) -- Permutation group code development, GAP integration, notebook
+development and deployment (2010--present). Sage is a free open-source mathematics software system
+licensed under the GPL.
+\end{itemize}
+
+
+\section*{\mblue Publications}
+
+\vspace{-2.15pc}
+{\hfill\mblue\rule{5.64in}{0.02cm}}
+
+\vspace{1pc}
+\begin{itemize}
+\item \'O Cath\'ain, Padraig, and Hill, Jason B., ``On the Classification of Hadamard Matrices of Order
+$4p$'', In preparation.
+\item Hill, Jason B., \textit{On Finding Totally Real Quintic Number Fields of Minimal Signature
+Group Rank}, MS Thesis, University of Vermont, Burlington, 2006. Print.
+\item Hill, Jason B., ``Salvaging \textit{La G\'eom\'etrie}'', \textit{Meteorite}, Volume 4 (2004)
+17--32. Print.
+\end{itemize}
+
+
+\section*{\mblue Workshops}
+
+\vspace{-2.15pc}
+{\hfill\mblue\rule{5.76in}{0.02cm}}
+
+\vspace{1pc}
+\begin{itemize}
+\item OpenACC GPU Programming Workshop -- Pittsburgh Supercomputing Center\qquad October 2012
+\item Sage Education Days 3 -- University of Washington\qquad June 2011
+\item Sage Notebook Days 31 -- University of Washington\qquad June 2011
+\item Sage Combinat Days 20.5 -- Fields Institute, Toronto, Canada\qquad May 2010
+\end{itemize}
+
+\end{document}
