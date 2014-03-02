@@ -33,8 +33,8 @@
 
 \vspace{-2.15pc} {\hfill\mblue\rule{5.37in}{0.02cm}}
 
-\vspace{1pc} \textbf{Languages/Libraries/APIs:} C/C++, Python, Cython, Bash, R, OpenMP, MPI, Boost,
-udev/sysfs, SCSI Generic, pandas 
+\vspace{1pc}\textbf{Languages/Libs/APIs:} Python, Cython, C/C++, OpenMP, MPI, Boost, udev/sysfs,
+SCSI Generic (SG), pandas, BASH, R
 
 \bigbreak\textbf{OS:} Enterprise: SLES, RHEL, CentOS\qquad Personal: OpenSUSE, Debian, Ubuntu\qquad
 Devel: VirtualBox, Kiwi, OBS, APT
@@ -43,7 +43,6 @@ Devel: VirtualBox, Kiwi, OBS, APT
 405,504-core distributed CPU/GPGPU systems, 4,096-core shared-memory single-image Linux systems,
 fixed-topology supercomputers, multi-controller HA RAID/MAID/JBOD SCSI-target devices, Amazon EC2,
 and commodity workstations.
-
 
 \section*{\mblue Work Experience}
 
@@ -56,19 +55,20 @@ and commodity workstations.
 \bigbreak
 \textit{Modular Infinite Storage -- Data Path Team}
 
-\begin{itemize} \item Led development of SCSI Enclosure Services (SES) backend [C/Cython] and
-frontend [Python] environmental monitoring utilities for the Modular Infinite Storage scale-out
-storage and compute platform.
+\begin{itemize}
+\item Led development and testing of SCSI Enclosure Services (SES) module (C/Cython backend with
+Python module frontend). Integrated the module with C++/BoostPython for environmental monitoring and
+enclosure services control on the Modular Infinite Storage scale-out storage/compute platform.
 
-\item Wrote Massive Array Idle Disk (MAID) drive power [C] and udev/sysfs hardware utility
-[C++/Cython] libraries for the Infinite Storage Gateway platform.
+\item Wrote Massive Array Idle Disk (MAID) drive power [C] library for the Kokopelli project.
 
 \item In charge of data path related system event logging for notification and system management.
 Wrote syslog event service [C++/Boost] and led event definition and cataloging management.
 
 \item Various: researched random IO cache algorithms for SSD/NVDIMM cache, automated target iSCSI
 port and Infiniband setup in OpenSUSE/SLES, tested Linux-HA solutions (e.g., Datera/RTSos, SLES HA,
-Pacemaker/Corosync).  \end{itemize}
+Pacemaker/Corosync).
+\end{itemize}
 
 \vspace{1pc}
 \textbf{University of Colorado Boulder}\quad 2006--2013\hfill Boulder, CO
@@ -128,13 +128,31 @@ group rank.
 
 \vspace{1pc}
 \begin{itemize}
-\item TweetWatch (github.com/hilljb/tweetwatch) -- A Python module allowing one to (1) connect to
-and (2) parse retrieved data from Twitter's streaming API. Development and testing in collaboration
-with Room 214. Licensed under the LGPL.
+\item Big Data
+
+\begin{itemize}
+\item TweetWatch (github.com/hilljb/tweetwatch) -- A Python module giving access to Twitter's
+streaming API and providing analytics of received data. Licensed under the LGPL and developed in
+partnership with Room 214, a digital marketing and social media agency in Boulder, Colorado.
+
+\item Collected data and performed analyses of social media activity during several large-scale
+events: 99.997\% of Twitter activity related to the 2014 Sochi Olympic Games, minute-by-minute
+analyses of the Tour de France, 2014 Super Bowl, 2013 NCAA ``March Madness,'' etc.
+
+\item Won an `Analyze Boulder' data analysis challenge by collecting geographically tagged
+social media references to `beer' in 70 languages over the span of one week and providing
+visualizations of the collected data.
+
+\item Presented a new randomized (Las Vegas) partition backgrack graph search algorithm at the 5th de
+Br\'un Workshop on Groups, Combinatorics, and Computing. NUI Galway, Ireland, 2011. 
+\end{itemize}
 
 \item Sage (www.sagemath.org) -- Permutation group code development, GAP integration, notebook
 development and deployment (2010--present). Sage is a free open-source mathematics software system
 licensed under the GPL.
+
+\item PyTableaux (github.com/hilljb/pytablueax) -- A Python module for \LaTeX\ combinatorics
+typesetting. 
 \end{itemize}
 
 
