@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  1 MAR 2026 00:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  5 MAR 2026 14:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -386,12 +386,12 @@ LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 (Font)              scaled to size 13.82408pt on input line 39.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 (Font)              scaled to size 9.60007pt on input line 45.
-LaTeX Font Info:    Trying to load font information for TS1+mdbch on input line 69.
+LaTeX Font Info:    Trying to load font information for TS1+mdbch on input line 71.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/mathdesign/mdbch/ts1mdbch.fd
 File: ts1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for TS1/mdbch.
 )
 LaTeX Font Info:    Font shape `TS1/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 69.
+(Font)              scaled to size 9.60007pt on input line 71.
 
 
 [1
@@ -407,13 +407,13 @@ L3 programming layer <2025-01-18>
 Here is how much of TeX's memory you used:
  4294 strings out of 473190
  61693 string characters out of 5715801
- 451222 words of memory out of 5000000
+ 452222 words of memory out of 5000000
  27513 multiletter control sequences out of 15000+600000
  576123 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,5n,79p,403b,173s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 58i,5n,79p,417b,173s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chb8t.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr8t.pfb>
-Output written on jasonbhill-resume-2026.pdf (2 pages, 46122 bytes).
+Output written on jasonbhill-resume-2026.pdf (2 pages, 46980 bytes).
 PDF statistics:
  32 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream
