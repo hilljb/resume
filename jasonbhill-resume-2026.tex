@@ -10,6 +10,10 @@
 \usepackage[bitstream-charter]{mathdesign}
 
 \usepackage[hmargin=2cm,vmargin=1.5cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\pdfinterwordspaceon
 \newcommand{\vsp}{\vspace{2pc}}
 \setlength\parindent{0pt} %% Sets indent space to 0
 \renewcommand{\indent}{\hspace{3pc}}
@@ -24,17 +28,15 @@
 
 \vspace{-1.0pc}
 \hfill{\Huge\mblue Jason B. Hill}
-\smallbreak{
-    \hfill{
-        \footnotesize
-            Westminster, CO, USA
-            \quad www.jasonbhill.com
-            \quad linkedin.com/in/hilljb
-            \quad github.com/hilljb
-            \quad jason@jasonbhill.com
-            \quad +1-802-233-6490}}
+\begin{flushright}\small
+    Westminster, CO, USA \\
+    jason@jasonbhill.com \\
+    +1-802-233-6490 \\
+    LinkedIn: \href{https://www.linkedin.com/in/hilljb}{linkedin.com/in/hilljb} \\
+    GitHub: \href{https://github.com/hilljb}{github.com/hilljb}
+\end{flushright}
 
-\vspace{2pc}
+\vspace{1pc}
 
 \section*{\mblue Introduction}
 
@@ -42,7 +44,7 @@
 {\hfill\mblue\rule{5.63in}{0.02cm}}
 
 \vspace{1pc}
-I transform organizations by understanding their business needs, creating clean data pipelines around those needs, and then doing data science to improve outcomes. I'm impactful as both a data engineer and a data scientist. I understand that doing meaningful data science requires having clean data. And I can communicate effectively at a business level.
+I transform organizations with data. I handle data from soup to nuts. I understand business needs, engineer a pipeline, analyze data, forecast outcomes, and (most importantly) drive change. I focus on predictability over short-term gains.
 
 \section*{\mblue Technical Stack}
 
@@ -50,16 +52,16 @@ I transform organizations by understanding their business needs, creating clean 
 {\hfill\mblue\rule{5.39in}{0.02cm}}
 
 \vspace{1pc}
-\textbf{Languages \& Frameworks:} Python (Jupyter, Numpy, Pandas, Dash, SciPy), Clojure, Bash, R, Java (Micronaut, Spring)
+\textbf{Languages \& Frameworks:} Python (Jupyter, NumPy, Pandas, Dash, SciPy), Clojure, Bash, R, Java (Micronaut, Spring)
 
 \vspace{1pc}
-\textbf{Data \& Infrastructure:} Advanced SQL, Oracle, PostgreSQL (window functions, UDFs, PL/pgSQL, recursive CTEs), BigQuery, GCP (Google Logging, Pub/Sub, GCS, CX-Agents, Vertex AI, Composer), AWS, CI/CD, Jenkins, Apache Airflow, Kafka, Splunk, Spark, PySpark, Spark SQL, Docker, architecture (Kimball/star, snowflake, xNF)
+\textbf{Data \& Infrastructure:} Google Cloud/GCP (BigQuery, Firestore, Functions, Logging, Pub/Sub, GCS, CX-Agents, Vertex AI, Composer, Looker/DataStudio), PostgreSQL (window functions, UDFs, PL/pgSQL, recursive CTEs), AWS, CI/CD, Jenkins, Apache Airflow, Kafka, Splunk, Spark, PySpark, Spark SQL, Docker, Oracle, architecture (Kimball/star, snowflake, xNF)
 
 \vspace{1pc}
-\textbf{Visualization Frameworks:} Google Looker, Splunk, Dash, Plotly, R-Shiny, Seaborn, Matplotlib, Tableau
+\textbf{Forecasting:} Monte Carlo, Bayesian inference, random forests, XGBoost
 
 \vspace{1pc}
-\textbf{AI/ML/Stats:} Vertex AI / GCP Conversational Agents, OpenAI, scikit-learn, TensorFlow, Monte Carlo, Bayesian inference, local LLMs, RAG, prediction transformer models, communicating stats effectively
+\textbf{AI/ML:} Vertex AI / GCP Conversational Agents, OpenAI, scikit-learn, TensorFlow, RAG, Cursor, Claude Code
 
 
 
@@ -70,22 +72,22 @@ I transform organizations by understanding their business needs, creating clean 
 {\hfill\mblue\rule{4.615in}{0.02cm}}
 
 \vspace{1pc}
-\textbf{Rally Software}\hfill Data Engineer, Senior Data Engineer
-\smallbreak\textbf{CA Agile Central}\hfill Data Scientist, Senior Data Scientist, Principal Data Scientist
-\smallbreak\textbf{Broadcom (Rally -- Agile Operations Division)}\hfill Staff Data Scientist
-\smallbreak Broomfield, Denver, Boulder, CO\hfill Oct 2015 -- Oct 2025
+\textbf{Rally Software} --- Data Engineer, Senior Data Engineer
+\smallbreak\textbf{CA Agile Central} --- Data Scientist, Senior Data Scientist, Principal Data Scientist
+\smallbreak\textbf{Broadcom (Agile Operations Division)} --- Staff Data Scientist
+\smallbreak Broomfield, Denver, Boulder, CO \textbar{} Oct 2015 -- Oct 2025
 
 \begin{itemize}
-    \item Led technical side of development for Agile flow metrics and Agile forecasting products.
+    \item Directed forecasting products. Organized inter-team development, QA, and testing for product releases.
     \item Developed a Smart Cumulative Flow Diagram for analyzing team and train delivery metrics.
-    \item Led team and train-level portfolio flow metrics design and development.
+    \item Led train-level portfolio flow metrics design and development.
     \item Used Vertex AI (Gemini) to produce flow metrics chart interpretations and coaching advice for teams and trains.
     \item Spearheaded capacity and delivery forecasting development for team and train-level planning.
-    \item Developed, maintained, and used an idempotent distributed tracing lambda architecture data pipeline for a visible and reliable usage and performance metrics system to report 100\% of user interactions in a SaaS environment involving 250K+ monthly users. Used the resulting data with Splunk, BigQuery, Looker, Spark, and other systems to analyze interactions. Held two years of long-lambda data for future needs. Data averaged 400GiB per day.
-    \item Led performance optimization, via tracing and visualizations, for Rally's Oracle to PostgreSQL migration.
-    \item Built and maintained a "product data hub" for those within Rally to track feature adoption, subscription usage, performance, and user input.
-    \item Built a leading indicator for subscription renewal predictions using usage data and random forest models.
-    \item Worked in Python, Java, Clojure, Bash, R, Scala, JavaScript (React), and elsewhere as needed.
+    \item Developed, maintained, and used an idempotent distributed tracing lambda architecture data pipeline for a visible and reliable usage and performance metrics system to report 100\% of user interactions in a SaaS environment involving 250K+ monthly users. Used the resulting data with Splunk, BigQuery, Looker, Spark, and other systems to analyze interactions. Held two years of long-lambda data for future needs. Data averaged 400 GiB per day.
+    \item Led performance optimization, via tracing and visualizations, for Rally's Oracle-to-PostgreSQL migration.
+    \item Built and maintained a ``product data hub'' for those within Rally to track feature adoption, subscription usage, performance, and user input.
+    \item Built a leading forecast indicator for subscription renewal predictions using usage data and random forest models.
+    \item I left a legacy here. I transformed the organization using data.
 \end{itemize}
 
 
@@ -93,12 +95,12 @@ I transform organizations by understanding their business needs, creating clean 
 
 
 \vspace{1pc}
-\textbf{SpotXChange}\hfill Data Scientist
-\smallbreak Broomfield, CO\hfill Apr 2014 -- Sep 2015
+\textbf{SpotXChange} --- Data Scientist
+\smallbreak Broomfield, CO \textbar{} Apr 2014 -- Sep 2015
 
 \vspace{1pc}
-\textbf{Silicon Graphics, Inc. (SGI)}\hfill Software Engineer
-\smallbreak Longmont, CO\hfill Jun 2013 -- Mar 2014
+\textbf{Silicon Graphics, Inc. (SGI)} --- Software Engineer
+\smallbreak Longmont, CO \textbar{} Jun 2013 -- Mar 2014
 
 
 
@@ -108,25 +110,25 @@ I transform organizations by understanding their business needs, creating clean 
 {\hfill\mblue\rule{5.845in}{0.02cm}}
 
 \vspace{1pc}
-\textbf{Ph.D. in Mathematics -- 2014/ABD}\hfill University of Colorado (Alexander Hulpke and Keith Kearnes)
+\textbf{Ph.D. (ABD) in Mathematics} --- University of Colorado (advisors: Alexander Hulpke and Keith Kearnes) \textbar{} 2014
 
 \begin{itemize}
     \item Computational group and graph theory, algebraic combinatorics, supercomputing
 \end{itemize}
 
-\bigbreak\textbf{M.A. in Mathematics -- 2010}\hfill University of Colorado (Keith Kearnes)
+\bigbreak\textbf{M.A. in Mathematics} --- University of Colorado (advisor: Keith Kearnes) \textbar{} 2010
 
 \begin{itemize}
     \item Computational group theory, representation theory
 \end{itemize}
 
-\bigbreak\textbf{M.S. in Mathematics -- 2006}\hfill University of Vermont (David S. Dummit)
+\bigbreak\textbf{M.S. in Mathematics} --- University of Vermont (advisor: David S. Dummit) \textbar{} 2006
 
 \begin{itemize}
     \item Computational algebraic number theory
 \end{itemize}
 
-\bigbreak\textbf{B.S. in Mathematics -- 2004}\hfill University of Michigan--Flint
+\bigbreak\textbf{B.S. in Mathematics} --- University of Michigan--Flint \textbar{} 2004
 
 \begin{itemize}
     \item Mathematics
@@ -142,10 +144,10 @@ I transform organizations by understanding their business needs, creating clean 
 \textbf{Other Work}
 
 \begin{itemize}
-    \item I've taught many mathematics courses at the university level. I've taught several graduate level courses.
+    \item I've taught many mathematics courses at the university level. I've taught several graduate-level courses.
     \item Adjunct instructor: Saint Michael's College, Mathematics, 2006
     \item Adjunct instructor: Community College of Vermont, Photography, 2006
-    \item Contract photographer: Automobile Magazine, location shoots, 2002-2005
+    \item Contract photographer: Automobile Magazine, location shoots, 2002--2005
 \end{itemize}
 
 \vspace{1pc}
@@ -153,19 +155,19 @@ I transform organizations by understanding their business needs, creating clean 
 
 \begin{itemize}
     \item Over the winter holidays, I work with the Save Elephant Foundation and Elephant Nature Park in northern Thailand to rescue and rehabilitate abused elephants. My wife and I sponsor multiple elephants.
-    \item I currently volunteer with A Precious Child in Broomfield, CO. I sort donations.
-    \item Two-time week-long volunteer at the Mount Washington Observatory, including winter.
+    \item A Precious Child in Broomfield, CO.
+    \item Mount Washington Obeservatory.
 \end{itemize}
 
 \vspace{1pc}
 \textbf{Random Stuff}
 
 \begin{itemize}
-    \item I've climbed 28 of Colorado's 14ers. Overall, I've had 39 14er summits.
-    \item Since moving to Colorado, I've played in more than 750 softball games. I've played every position except pitcher. My favorite position is catcher, because nobody in D-league softball expects a good catcher.
+    \item I've climbed 28 of Colorado's 14ers. Overall, I've summited 14ers 39 times.
+    \item Since moving to Colorado, I've played in more than 800 softball games. I've played every position except pitcher.
     \item I've been to 51 countries.
     \item I rode bike trials in the Vans Warped Tour three times.
-    \item I'm faceblind.
+    \item I'm face-blind. I don't recognize people, but my math brain is always online.
 \end{itemize}
 
 
